@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+	<link rel="stylesheet" href="./assets/style/dailylog2.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<title>TAE</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text"><img src="/assets/img/tae-logo.png" height="100px" alt=""></span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="academics.html">
+					<i class='bx bxs-calendar-star'></i>
+					<span class="text">Academics</span>
+				</a>
+			</li>
+			<li>
+				<a href="notices.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Notices</span>
+				</a>
+			</li>
+			<!-- <li>
+				<a href="">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Time Table</span>
+				</a>
+			</li> -->
+			<!-- <li>
+				<a href="leaves.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Leaves</span>
+				</a>
+			</li> -->
+
+			<li>
+				<a href="dailylogs.html">
+					<i class='bx bx-calendar-check'></i>
+					<span class="text">Daily Logs</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="student_record.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Student Info</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="./settings.html">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<a href="">&copy; 2024-25 TAE</a>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<div class="intro">
+				<h2>Trinity Academy of Engineering</h2>
+			</div>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+			<a href="#" class="profile">
+				<p>Prof. Nilufer Zaman</p> <img src="/assets/img/nilufermam.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Daily Logs</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Daily Logs</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li class="active">
+							<a href="#" class="active">Current</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a href="./previous-dailyllogs.html">Previous logs</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="absent">
+					<h3>Absent Students : 28</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Roll no.</th>
+								<th>Name</th>
+								<th>Attended</th>
+								<th>Conducted</th>
+								<th>Status</th>
+								<th>Overall</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>John Doe</td>
+								<td>75</td>
+								<td>80</td>
+								<td class="status">Absent</td>
+								<td class="overall"><span>89%</span></td>
+							</tr>
+							<!-- Additional rows here -->
+						</tbody>
+					</table>
+
+
+				</div>
+
+
+				<div class="present">
+					<h3>Present Students : 78 </h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Roll no.</th>
+								<th>Name</th>
+								<th>Attended</th>
+								<th>Conducted</th>
+								<th>Status</th>
+								<th>Remark</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>xyzabcd</td>
+								<td>12</td>
+								<td>20</td>
+								<td style="color: green;">Present</td>
+								<td style="color: red;cursor: pointer;">mark abs.</td>
+							</tr>
+						</thead>
+					</table>
+				</div>
+
+
+
+			</div>
+
+
+		</main>
+
+	</section>
+
+
+
+
+
+	<style>
+		.status {
+			color: red;
+			/* Sets the text color of the Status column to red */
+		}
+
+		.overall {
+			font-weight: 600;
+		}
+	</style>
+	</script>
+
+
+
+	<script>document.querySelectorAll('td.overall span').forEach(span => {
+			const text = span.textContent;
+			const value = parseInt(text, 10);
+
+			if (value > 75) {
+				span.style.color = 'green';
+			} else {
+				span.style.color = 'red';
+			}
+		});
+
+
+	</script>
+</body>
+
+</html>

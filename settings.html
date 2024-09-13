@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<link rel="stylesheet" href="./assets/style/history.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+	<link rel="stylesheet" href="./assets/style/students.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./assets/js/profile-update.js"></script>
+
+
+	<title>TAE</title>
+
+
+</head>
+<style>
+	.card {
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		padding: 30px;
+		max-width: 500px;
+		width: 100%;
+		margin: 2vh auto 0 auto;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	#registration-heading {
+		margin-bottom: 20px;
+		font-size: 24px;
+		color: #333;
+		text-align: center;
+	}
+
+
+	.input-control {
+		margin-bottom: 20px;
+	}
+
+	.input-control label {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 14px;
+		color: #333;
+	}
+
+	.input-control input[type="file"],
+	.input-control input[type="text"],
+	.input-control input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		/* border-color: red; */
+	}
+
+	.input-control input[type="file"] {
+		padding: 5px;
+	}
+
+	.input-control .error {
+		color: red;
+		font-size: 12px;
+		margin-top: 5px;
+		border-color: red;
+	}
+
+	button[type="submit"] {
+		background-color: #007bff;
+		color: white;
+		padding: 12px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+</style>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text"><img src="/assets/img/tae-logo.png" height="100px" alt=""></span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="academics.html">
+					<i class='bx bxs-calendar-star'></i>
+					<span class="text">Academics</span>
+				</a>
+			</li>
+			<li>
+				<a href="notices.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Notices</span>
+				</a>
+			</li>
+			<!-- <li>
+				<a href="">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Time Table</span>
+				</a>
+			</li> -->
+			<!-- <li>
+				<a href="leaves.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Leaves</span>
+				</a>
+			</li> -->
+
+			<li>
+				<a href="dailylogs.html">
+					<i class='bx bx-calendar-check'></i>
+					<span class="text">Daily Logs</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="student_record.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Student Info</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="./settings.html">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<a href="">&copy; 2024-25 TAE</a>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<div class="intro">
+				<h2>Trinity Academy of Engineering</h2>
+			</div>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+			<a href="#" class="profile">
+				<p>Prof. Nilufer Zaman</p> <img src="/assets/img/nilufermam.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Students</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Students</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Registration</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="container">
+					<form id="form" action="/">
+						<h1 id="registration-heading">Validation Form</h1>
+						<div class="input-control">
+							<label for="imageUpload">Change Image</label>
+							<input id="imageUpload" name="imageUpload" type="file" accept="image/*">
+							<div class="error"></div>
+						</div>
+						<div class="input-control">
+							<label for="username">Username</label>
+							<input id="username" name="username" type="text">
+							<div class="error"></div>
+						</div>
+						<div class="input-control">
+							<label for="email">Designation</label>
+							<input id="designation" name="designation" type="text">
+							<div class="error"></div>
+						</div>
+						<div class="input-control">
+							<label for="password">Password</label>
+							<input id="password" name="password" type="password">
+							<div class="error"></div>
+						</div>
+						<div class="input-control">
+							<label for="password2">Confirm Password</label>
+							<input id="password2" name="password2" type="password">
+							<div class="error"></div>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+
+			<script>
+				const form = document.getElementById('form');
+				const username = document.getElementById('username');
+				const email = document.getElementById('designation');
+				const password = document.getElementById('password');
+				const password2 = document.getElementById('password2');
+
+				form.addEventListener('submit', e => {
+					e.preventDefault();
+					validateInputs();
+				});
+
+				const setError = (element, message) => {
+					const inputControl = element.parentElement;
+					const errorDisplay = inputControl.querySelector('.error');
+
+					errorDisplay.innerText = message;
+					inputControl.classList.add('error');
+					inputControl.classList.remove('success')
+				}
+
+				const setSuccess = element => {
+					const inputControl = element.parentElement;
+					const errorDisplay = inputControl.querySelector('.error');
+
+					errorDisplay.innerText = '';
+					inputControl.classList.add('success');
+					inputControl.classList.remove('error');
+				};
+
+				const validateInputs = () => {
+					const usernameValue = username.value.trim();
+					const passwordValue = password.value.trim();
+					const password2Value = password2.value.trim();
+
+					if (usernameValue === '') {
+						setError(username, 'Username is required');
+					} else {
+						setSuccess(username);
+					}
+
+					if (passwordValue === '') {
+						setError(password, 'Password is required');
+					} else if (passwordValue.length < 8) {
+						setError(password, 'Password must be at least 8 character.')
+					} else {
+						setSuccess(password);
+					}
+
+					if (password2Value === '') {
+						setError(password2, 'Please confirm your password');
+					} else if (password2Value !== passwordValue) {
+						setError(password2, "Passwords doesn't match");
+					} else {
+						setSuccess(password2);
+					}
+
+				};
+			</script>
+
+</body>
+
+</html>
