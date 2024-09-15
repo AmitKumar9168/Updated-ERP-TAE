@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="./assets/style/style.css">
-	
+
 	<title>TAE</title>
 </head>
 
@@ -106,8 +106,8 @@
 				<span class="num">8</span>
 			</a>
 
-			<a href="#" class="profile" >
-				<p>Admin Console</p>	<img src="./assets/img/letter-A.png">
+			<a href="#" class="profile">
+				<p>Prof. Nilufer Zaman</p> <img src="./assets/img/nilufermam.jpg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -116,143 +116,193 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Identities</h1>
+					<h1>Student Info</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="identities.html">Identities</a>
+							<a href="identities.html">Students Identities</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a  class="active" href="students_dept.html">Students</a>
+							<a class="active" href="students_dept.html">Students</a>
 						</li>
-						
+
 					</ul>
 				</div>
 			</div>
-			
 
 
 
 
 
-<div class="container">
 
-    <div class="info">
-        <div class="text">
-            <h1>Students Records</h1>
-    <p>View the students records according to the classes listed below.</p>
+			<div class="container">
+				<div class="info">
+					<div class="text">
+						<h1>Students Records</h1>
+						<p>View the students records according to the classes listed below.</p>
 
-		</div>
-        
-    </div>
-	<br>
-    <hr>
-    <table>
-        <thead>
-            <tr>
-                <th>Department</th>
-                <th>No. of Students</th>
-                <th>View</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Second Year</td>
-                <td><span class="status">25</span></td>
-                <td> <a href="./student_record2.html"><i class="fa-solid fa-arrow-right icon"></i></a></td>
-            </tr>
-            <tr>
-                <td>Third Year</td>
-                <td><span class="status">35</span></td>
-                <td> <a href="./student_record2.html"><i class="fa-solid fa-arrow-right icon"></i></a></td>
-            </tr>
-            <tr>
-                <td>Final Year</td>
-                <td><span class="status">32</span></td>
-                <td><a href="./student_record2.html"><i class="fa-solid fa-arrow-right icon"></i></a></td>
-            </tr>
-           
-        </tbody>
-    </table>
-</div>
+					</div>
+
+					<div class="form-std-data">
+					<form action="get" id="std-rec">
+						<select name="class" id="class">
+							<option value="" disabled selected>Select Year</option>
+							<option value="SE">Second Year</option>
+							<option value="TE">Third Year</option>
+							<option value="BE">Final Year</option>
+							<option value="BE">All</option>
+						</select>
+						<button type="submit"><i class="fa-solid fa-search"></i></button>
+					</form>
+				</div>
+				</div>
+				<br>
+				<hr>
+				<table>
+					<thead>
+						<tr>
+							<th>Roll no.</th>
+							<th>Student Name</th>
+							<th>Class</th>
+							<th>Div.</th>
+							<th>Attendance</th>
+							<th>Defaulter</th>
+							<th>View</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>XYZ-ABCD</td>
+							<td>SE</td>
+							<td>A</td>
+							<td><span class="status">55%</span></td>
+							<td><span class="status">YES/NO</span></td>
+							<td> <a href="./student_record_details.html"><i class="fa-solid fa-arrow-right icon"></i></a></td>
+						</tr>
+						
+
+					</tbody>
+				</table>
+			</div>
 
 
 
-<style>
-				
-	.container  {
-		max-width: auto;
-		display: flex;
-		flex-direction: column;
-		margin: 50px auto;
-		background-color: #fff;
-		border-radius: 8px;
-		padding: 20px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		display: flex;
+			<style>
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
-    align-items: start;
-    padding-top: 10px;
-    background-color:white;
-    padding: 14px;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
     border-radius: 12px;
-	}
+}
 
-	table {
-		width: 100%;
-		border-collapse: collapse;
-	}
-	th, td {
-		text-align: left;
-		padding: 12px;
-		border-bottom: 1px solid #ddd;
-	}
-	th {
-		color: #888;
-		text-transform: uppercase;
-		font-size: 15px;
-	}
-	td {
-		font-size: 16px;
-		font-weight: 500;
-		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		color: #333;
-	}
-	td:nth-child(3) {
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+td {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+td:nth-child(3) {
     padding-left: 22.5px;
 }
-	.status {
-		color: #28a745;
-		font-weight: bold;
-		text-transform: capitalize;
-	}
-	hr{
-		width: 100%;
-	}
-	.info{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.icon{
-		color: rgb(0, 94, 255);
-		&:hover{
-			cursor: pointer;
-		}
-	}
+
+.status {
+    color: #28a745;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+hr {
+    width: 100%;
+}
+
+.icon {
+    color: rgb(0, 94, 255);
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: rgb(0, 70, 200);
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-std-data {  
+    display: flex;
+    justify-content: flex-end;
+}
+
+#std-rec {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+select {
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;  
+}
+
+select:focus {
+    border: 1px solid #007BFF;  
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+button i {
+    font-size: 16px;
+}
+			</style>
 
 
-	
-</style>
 
 
 
 
-			
 
 
-			
 
 
 		</main>

@@ -118,7 +118,7 @@
 			</a>
 
 			<a href="#" class="profile">
-				<p>Admin Console</p> <img src="./assets/img/letter-A.png">
+				<p>Prof. Nilufer Zaman</p> <img src="./assets/img/nilufermam.jpg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -127,10 +127,10 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Identities</h1>
+					<h1>Student Info</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="identities.html">Identities</a>
+							<a href="identities.html">Students Identities</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
@@ -147,7 +147,6 @@
 
 
 			<div class="container">
-
 				<div class="info">
 					<div class="text">
 						<h1>Students Records</h1>
@@ -155,39 +154,58 @@
 
 					</div>
 
+					<div class="form-std-data">
+						<form action="get" id="dept-rec">
+							<select name="class" id="class">
+								<option value="" disabled selected>Select Department</option>
+								<option value="SE">Computer Dept.</option>
+								<option value="TE">Mechanical Dept.</option>
+								<option value="BE">I.T. Dept.</option>
+								<option value="BE">E&TC</option>
+								<option value="BE">Civil Dept.</option>
+								<option value="BE">MCA Dept.</option>
+								<option value="BE">All</option>
+							</select>
+							<form action="get" id="std-rec">
+								<select name="class" id="class">
+									<option value="" disabled selected>Select Year</option>
+									<option value="SE">Second Year</option>
+									<option value="TE">Third Year</option>
+									<option value="BE">Final Year</option>
+									<option value="BE">All</option>
+								</select>
+								<button type="submit"><i class="fa-solid fa-search"></i></button>
+							</form>
+							
+						</form>
+					
+				</div>
 				</div>
 				<br>
 				<hr>
 				<table>
 					<thead>
 						<tr>
-							<th>Department</th>
-							<th>No. of Students</th>
+							<th>Roll no.</th>
+							<th>Student Name</th>
+							<th>Class</th>
+							<th>Div.</th>
+							<th>Attendance</th>
+							<th>Defaulter</th>
 							<th>View</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>First Year</td>
-							<td><span class="status">25</span></td>
-							<td><i class="fa-solid fa-arrow-right icon"></i></td>
+							<td>1</td>
+							<td>XYZ-ABCD</td>
+							<td>SE</td>
+							<td>A</td>
+							<td><span class="status">55%</span></td>
+							<td><span class="status">YES/NO</span></td>
+							<td> <a href="./student_record_details.html"><i class="fa-solid fa-arrow-right icon"></i></a></td>
 						</tr>
-						<tr>
-							<td>Second Year</td>
-							<td><span class="status">25</span></td>
-							<td><i class="fa-solid fa-arrow-right icon"></i></td>
-						</tr>
-						<tr>
-							<td>Third Year</td>
-							<td><span class="status">35</span></td>
-							<td><i class="fa-solid fa-arrow-right icon"></i></td>
-						</tr>
-						<tr>
-							<td>Final Year</td>
-							<td><span class="status">32</span></td>
-							<td><i class="fa-solid fa-arrow-right icon"></i></td>
-						</tr>
-
+						
 
 					</tbody>
 				</table>
@@ -196,91 +214,111 @@
 
 
 			<style>
-				.container {
-					max-width: auto;
-					display: flex;
-					flex-direction: column;
-					margin: 50px auto;
-					background-color: #fff;
-					border-radius: 8px;
-					padding: 20px;
-					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-					display: flex;
-					width: 100%;
-					height: auto;
-					align-items: start;
-					padding-top: 10px;
-					background-color: white;
-					padding: 14px;
-					border-radius: 12px;
-				}
 
-				.add-application {
-					display: inline-block;
-					padding: 10px 20px;
-					color: #fff;
-					background-color: #007bff;
-					border-radius: 4px;
-					text-decoration: none;
-					margin-bottom: 20px;
-				}
 
-				.add-application:hover {
-					background-color: #0056b3;
-				}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+}
 
-				table {
-					width: 100%;
-					border-collapse: collapse;
-				}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-				th,
-				td {
-					text-align: left;
-					padding: 12px;
-					border-bottom: 1px solid #ddd;
-				}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
 
-				th {
-					color: #888;
-					text-transform: uppercase;
-					font-size: 15px;
-				}
+th {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 15px;
+}
 
-				td {
-					font-size: 16px;
-					font-weight: 500;
-					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-					color: #333;
-				}
+td {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+td:nth-child(3) {
+    padding-left: 22.5px;
+}
 
-				td:nth-child(3) {
-					padding-left: 22.5px;
-				}
+.status {
+    color: #28a745;
+    font-weight: bold;
+    text-transform: capitalize;
+}
 
-				.status {
-					color: #28a745;
-					font-weight: bold;
-					text-transform: capitalize;
-				}
+hr {
+    width: 100%;
+}
 
-				hr {
-					width: 100%;
-				}
+.icon {
+    color: rgb(0, 94, 255);
+}
 
-				.info {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-				}
+.icon:hover {
+    cursor: pointer;
+    color: rgb(0, 70, 200);
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-				.icon {
-					color: rgb(0, 94, 255);
+.form-std-data {  
+    display: flex;
+    justify-content: flex-end;
+}
 
-					&:hover {
-						cursor: pointer;
-					}
-				}
+#std-rec {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+select {
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;  
+}
+
+select:focus {
+    border: 1px solid #007BFF;  
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+button i {
+    font-size: 16px;
+}
 			</style>
 
 
